@@ -199,6 +199,8 @@ a:any-link {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 15px;
+  max-width: 335px;
+  height: 122px;
 }
 
 .main__content__course {
