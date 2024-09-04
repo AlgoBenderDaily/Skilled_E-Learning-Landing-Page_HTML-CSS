@@ -278,3 +278,165 @@ a:any-link {
   padding: 10.5px 24px;
   font: var(--DSK-TEXT-PRESET7);
 }
+
+/* || Tablet */
+@media (min-width: 768px) {
+  /* || HEADER */
+  .header__nav {
+    gap: 449px;
+    margin: 24px 44px;
+  }
+
+  .nav__cta-btn {
+    padding: 10.5px 24px;
+    width: 152px;
+    height: 48px;
+  }
+
+  /* || MAIN */
+  .main__hero-content {
+    margin: 88px 44px 64px 0;
+    flex-flow: row;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet.responsive-image {
+    display: block;
+  }
+
+  .tablet.responsive-image img {
+    width: 379px;
+    height: auto;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+
+  .hero-content__texts {
+    gap: 40px;
+    margin-right: 300px;
+  }
+
+  .hero-content__title {
+    width: 326px;
+    height: auto;
+  }
+
+  .hero-content__wording {
+    width: 326px;
+    height: auto;
+  }
+
+  .hero-content__cta-btn {
+    padding: 10.5px 24px;
+    width: 152px;
+    height: 48px;
+  }
+
+  .main__content {
+    width: 800px;
+    margin: 128px 44px 144px 44px;
+  }
+
+  .main__content__course-cta {
+    padding: 64px 32px 40px 32px;
+    max-width: 328px;
+    height: 322px;
+    margin-top: 28px;
+  }
+
+  .main__content__course {
+    max-width: 328px;
+    height: 322px;
+  }
+
+  /* || FOOTER */
+  .footer__center {
+    gap: 448.71px;
+    margin: 24px 44px;
+  }
+}
+
+/* || Desktop/TV */
+@media (min-width: 992px) {
+  /* || HEADER */
+  .header__nav {
+    gap: 449px;
+    margin: 24px 44px;
+  }
+
+  .nav__cta-btn {
+    padding: 10.5px 24px;
+    width: 152px;
+    height: 48px;
+  }
+
+  /* || MAIN */
+  .main__hero-content {
+    margin: 88px 44px 64px 0;
+    flex-flow: row;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet.responsive-image {
+    display: block;
+  }
+
+  .tablet.responsive-image img {
+    width: 348px;
+    height: auto;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+
+  .hero-content__texts {
+    gap: 40px;
+    margin-right: 300px;
+  }
+
+  .hero-content__title {
+    width: 326px;
+    height: auto;
+  }
+
+  .hero-content__wording {
+    width: 326px;
+    height: auto;
+  }
+
+  .hero-content__cta-btn {
+    padding: 10.5px 24px;
+    width: 152px;
+    height: 48px;
+  }
+
+  .main__content {
+    width: 800px;
+    margin: 128px 44px 144px 44px;
+  }
+
+  .main__content__course-cta {
+    padding: 64px 32px 40px 32px;
+    max-width: 328px;
+    height: 322px;
+    margin-top: 28px;
+  }
+
+  .main__content__course {
+    max-width: 328px;
+    height: 322px;
+  }
+
+  /* || FOOTER */
+  .footer__center {
+    gap: 448.71px;
+    margin: 24px 44px;
+  }
+}
