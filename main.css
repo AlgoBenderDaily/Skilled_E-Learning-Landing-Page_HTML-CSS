@@ -103,6 +103,7 @@ a:any-link {
 .header {
   display: flex;
   justify-content: center;
+  max-width: 100%;
 }
 
 .header__nav {
@@ -132,6 +133,7 @@ a:any-link {
 .main {
   display: flex;
   justify-content: center;
+  max-width: 100%;
 }
 
 .main__hero-content {
