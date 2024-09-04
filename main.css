@@ -401,10 +401,12 @@ a:any-link {
 
   .hero-content__title {
     width: 457px;
+    font: var(--DSK-TEXT-PRESET1);
   }
 
   .hero-content__wording {
     width: 457px;
+    font: var(--DSK-TEXT-PRESET5);
   }
 
   .hero-content__cta-btn {
