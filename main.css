@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* || REST */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --BLUE-900: #13183f;
+  --BLUE-600: #666ca3;
+  --PINK-600: #f74780;
+  --PINK-300: #ffa7c3;
+  --GREY: #83869a;
+  --WHITE: #ffffff;
+
+  /* GRADIENTS */
+  --GRADIENT-PINK: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+
+  --GRADIENT-PINK-HOVER: linear-gradient(180deg, #fba7b3 0%, #fba6ba 60%),
+    #fba7b3 100%;
+
+  --GRADIENT-PURPLE: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+
+  --GRADIENT-PURPLE-HOVER: linear-gradient(
+    180deg,
+    #d39be3 0%,
+    #dd9ae0 60%,
+    #cf9fdf 100%
+  );
+
+  /* TYPOGRAPHY */
+  --FF: "Plus Jakarta Sans", sans-serif;
+
+  --DSK-TEXT-PRESET1: 800 56px/120% var(--FF);
+  --DSK-TEXT-PRESET2: 800 40px/120% var(--FF);
+  --DSK-TEXT-PRESET3: 800 32px/120% var(--FF);
+  --DSK-TEXT-PRESET4: 800 24px/120% var(--FF);
+  --DSK-TEXT-PRESET5: 500 18px/150% var(--FF);
+  --DSK-TEXT-PRESET6: bold 16px/150% var(--FF);
+  --DSK-TEXT-PRESET7: bold 18px/150% var(--FF);
+
+  --MOB-TEXT-PRESET1: 800 40px/120% var(--FF);
+  --MOB-TEXT-PRESET2: 800 32px/120% var(--FF);
+  --MOB-TEXT-PRESET3: 800 24px/120% var(--FF);
+  --MOB-TEXT-PRESET4: 800 20px/120% var(--FF);
+  --MOB-TEXT-PRESET6: bold 14px/120% var(--FF);
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.responsive-image {
+  display: none;
+}
+
+/* MOBILE FIRST DESIGN */
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: var(--WHITE);
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+a:any-link {
+  text-decoration: none;
+  color: black;
+}
+
+/* || HEADER */
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 88px;
+  margin: 16px 20px;
+}
+
+.header__nav figure img {
+  width: 79.29px;
+}
+
+.nav__cta-btn {
+  background-color: var(--BLUE-900);
+  color: var(--WHITE);
+  padding: 16px 32px;
+  border-radius: 28px;
+  font: var(--DSK-TEXT-PRESET7);
+  width: 168px;
+  height: 59px;
+}
+
+/* || MAIN */
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main__hero-content {
+  margin: 80px 20px 64px 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 48px;
+}
+
+.hero-content__texts {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.texts__wording {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+
+.hero-content__title {
+  font: var(--MOB-TEXT-PRESET1);
+  color: var(--BLUE-900);
+}
+
+.hero-content__wording {
+  color: var(--GREY);
+  font: var(--DSK-TEXT-PRESET5);
+}
+
+.hero-content__cta-btn {
+  background-color: black;
+  color: var(--WHITE);
+  border-radius: 28px;
+  background-image: var(--GRADIENT-PINK);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 16px 32px;
+  width: 168px;
+  height: 59px;
+  font: var(--DSK-TEXT-PRESET7);
+}
+
+.main__content {
+  display: flex;
+  gap: 32px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 335px;
+  height: auto;
+  margin: 64px 20px 80px 20px;
+}
+
+.main__content__course-cta {
+  color: var(--WHITE);
+  font: var(--MOB-TEXT-PRESET3);
+  padding: 32px;
+  background-color: black;
+  background-image: var(--GRADIENT-PINK);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.main__content__course {
+  max-width: 335px;
+  height: 300px;
+  background-color: var(--WHITE);
+  border-radius: 15px;
+  padding: 64px 32px 40px 32px;
+  box-shadow: 0px 25px 50px 0px hsla(233, 92%, 29%, 0.15);
+  position: relative;
+  margin-top: 32px;
+}
+
+.course__avatar img {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  bottom: 90.667%;
+  left: 9.01%;
+}
+
+.course__text-content {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+
+.course__title {
+  font: var(--MOB-TEXT-PRESET4);
+  color: var(--BLUE-900);
+}
+
+.course__wording {
+  font: var(--DSK-TEXT-PRESET6);
+  color: var(--GREY);
+}
+
+.course__link {
+  font: var(--DSK-TEXT-PRESET7);
+  color: var(--PINK-600);
+}
+
+/* || FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--BLUE-900);
+  max-width: 100%;
+  height: 96px;
+}
+
+.footer__center {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 103.71px;
+  margin: 24px 20px;
+}
+
+.footer__center figure img {
+  width: 79.29px;
+}
+
+.footer__cta-btn {
+  width: 152px;
+  height: 48px;
+  border-radius: 28px;
+  color: var(--WHITE);
+  background-color: black;
+  background-image: var(--GRADIENT-PURPLE);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10.5px 24px;
+  font: var(--DSK-TEXT-PRESET7);
+}
