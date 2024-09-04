@@ -84,6 +84,7 @@ body {
   min-height: 100vh;
   max-width: 100%;
   background-color: var(--WHITE);
+  overflow-x: hidden;
 }
 
 h1,
@@ -136,11 +137,22 @@ a:any-link {
   max-width: 100%;
 }
 
+.main__center {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.mobile img {
+  width: 335px;
+  height: 320px;
+}
+
 .main__hero-content {
   margin: 80px 20px 64px 20px;
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  align-items: center;
   gap: 48px;
 }
 
@@ -189,7 +201,7 @@ a:any-link {
   flex-wrap: wrap;
   width: 335px;
   height: auto;
-  margin: 64px 20px 80px 20px;
+  margin: 0 20px 80px 20px;
 }
 
 .main__content__course-cta {
