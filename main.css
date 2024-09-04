@@ -114,9 +114,9 @@ a:any-link {
   margin: 16px 20px;
 }
 
-.header__nav figure img {
+/* .header__nav figure img {
   width: 79.29px;
-}
+} */
 
 .nav__cta-btn {
   background-color: var(--BLUE-900);
@@ -238,7 +238,7 @@ a:any-link {
   color: var(--GREY);
 }
 
-.course__link {
+.course__link a {
   font: var(--DSK-TEXT-PRESET7);
   color: var(--PINK-600);
 }
@@ -261,9 +261,9 @@ a:any-link {
   margin: 24px 20px;
 }
 
-.footer__center figure img {
+/* .footer__center figure img {
   width: 79.29px;
-}
+} */
 
 .footer__cta-btn {
   width: 152px;
