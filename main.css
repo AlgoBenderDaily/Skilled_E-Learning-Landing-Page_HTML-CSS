@@ -116,10 +116,6 @@ a:any-link {
   margin: 16px 20px;
 }
 
-/* .header__nav figure img {
-  width: 79.29px;
-} */
-
 .nav__cta-btn {
   background-color: var(--BLUE-900);
   color: var(--WHITE);
@@ -141,11 +137,6 @@ a:any-link {
   display: flex;
   flex-flow: column;
   align-items: center;
-}
-
-.mobile img {
-  width: 335px;
-  height: 320px;
 }
 
 .main__hero-content {
@@ -274,10 +265,6 @@ a:any-link {
   gap: 103.71px;
   margin: 24px 20px;
 }
-
-/* .footer__center figure img {
-  width: 79.29px;
-} */
 
 .footer__cta-btn {
   width: 152px;
