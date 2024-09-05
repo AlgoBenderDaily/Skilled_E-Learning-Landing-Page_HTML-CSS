@@ -181,6 +181,7 @@ a:any-link {
   width: 168px;
   height: 59px;
   font: var(--DSK-TEXT-PRESET7);
+  position: relative;
 }
 
 .main__content {
@@ -277,6 +278,7 @@ a:any-link {
   background-repeat: no-repeat;
   padding: 10.5px 24px;
   font: var(--DSK-TEXT-PRESET7);
+  position: relative;
 }
 
 /* || Tablet */
@@ -413,7 +415,8 @@ a:any-link {
     font: var(--DSK-TEXT-PRESET5);
   }
 
-  .hero-content__cta-btn {
+  .hero-content__cta-btn,
+  .footer__cta-btn {
     padding: 16px 32px;
     width: 168px;
     height: 59px;
@@ -432,9 +435,39 @@ a:any-link {
     max-width: 352px;
   }
 
+  .course__link a:hover,
+  .course__link a:focus-visible {
+    color: var(--PINK-300);
+  }
+
   /* || FOOTER */
   .footer__center {
     gap: 841px;
     margin: 24px 85px;
+  }
+
+  .overlay.responsive-image {
+    display: none;
+    background-color: white;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 28px;
+    z-index: 2;
+    width: 168px;
+    height: 59px;
+  }
+
+  .hero-content__cta-btn:focus-visible .overlay.responsive-image,
+  .hero-content__cta-btn:hover .overlay.responsive-image,
+  .footer__cta-btn:hover .overlay.responsive-image,
+  .footer__cta-btn:focus-visible .overlay.responsive-image {
+    display: block;
+  }
+
+  .nav__cta-btn:hover,
+  .nav__cta-btn:focus-visible {
+    background-color: var(--BLUE-600);
   }
 }
